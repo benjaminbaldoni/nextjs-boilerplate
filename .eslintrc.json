@@ -1,0 +1,37 @@
+{
+  "extends": ["airbnb", "airbnb/hooks"],
+  "parserOptions":{
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "rules": {
+    "semi": [2, "never"],
+    "import/no-extraneous-dependencies": "off",
+    "object-curly-newline": "off",
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "react/destructuring-assignment": "off",
+    "import/prefer-default-export": "off",
+    "global-require": "off",
+    "react/no-danger": "off",
+    "new-cap": "off",
+    "react/jsx-filename-extension": "off",
+    "max-len": ["error", 120],
+    "react/prefer-stateless-function": "off",
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "react/forbid-prop-types": "off",
+    "react/prop-types": [2, { "ignore": ["navigation", "route"] }],
+    "no-nested-ternary": 0,
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-props-no-spreading": "off",
+    "arrow-parens": ["error", "as-needed"]
+  },
+  "env": {
+    "jest": true
+  },
+  "globals": {
+    "fetch": false,
+    "FormData": false
+  }
+}
